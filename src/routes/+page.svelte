@@ -1,13 +1,17 @@
 <script>
-    import Soon from "./soon.svelte";
-
 
 </script>
 
+<svelte:head>
+    <title>Flare</title>
+</svelte:head>
+
 <div class="root">
-    <Soon />
+    
 </div>
 
 <style>
-
+    :global(body) {
+        background-color: rgb(22, 22, 22);
+    }
 </style>
