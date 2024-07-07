@@ -1,7 +1,6 @@
 <script>
     import Auth from "./auth.svelte";
 
-
 </script>
 
 
@@ -11,4 +10,5 @@
 
 
 <style> 
+
 </style>

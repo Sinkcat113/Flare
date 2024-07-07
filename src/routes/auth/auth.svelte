@@ -1,9 +1,11 @@
 <script>
     import logo from "../../lib/Flare_Logo.png"
     
-    import { createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+    import { createUserWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
     import { auth, db } from "../../lib/firebase.js"
     import { update, ref } from "firebase/database";
+
+    signOut(auth)
 
     let email
     let password
@@ -30,7 +32,7 @@
     <input type="password" placeholder="Password" bind:value={password}>
     <button on:click={signUp}>Sign Up</button>
     
-    <a href="/auth/login">Login &#8594;</a>
+    <a href="/login">Login &#8594;</a>
 </div>
 
 <style>
